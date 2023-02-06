@@ -1,7 +1,210 @@
 <!DOCTYPE html>
-<head>
-    <title>This is a webpage</title>
-</head>
-<body>
-    <button>dog button</button>
-</body>
+<html lang="en">
+  <head>
+    <title>This is indeed a webpage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="row align-items-md-stretch">
+      <div class="col-sm-6">
+        <div class="h-100 p-5 text-white bg-primary border rounded-3">
+          <h2>Aiden Bauer Website</h2>
+          <p>
+            This is my very cool very sweet website. I used the bootstrap
+            snippets extension on VSCode to make this as well as some help from W3Schools Bootstrap 3 Tutorial.
+            I basically just threw together a bunch of default snippets onto this website since I
+            didn't want to go to in-depth and mess anything up.
+          </p>
+          <button class="btn btn-outline-primary" type="button">Boo</button>
+        </div>
+      </div>
+    <header>
+      <!-- place navbar here -->
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="about-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#about"
+            type="button"
+            role="tab"
+            aria-controls="about"
+            aria-selected="false"
+          >
+            About Me
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="messages-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#messages"
+            type="button"
+            role="tab"
+            aria-controls="messages"
+            aria-selected="false"
+          >
+            Funny Dog?
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div
+          class="tab-pane active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+        <div class="container">
+            <h2>Home Page</h2>
+            <p>This is the home page. I don't really know what else to put here.
+            </p>
+            <p>Here are some links:</p>
+            <div class="thumbnail">
+                <a href="https://github.com/abauer1854" target="_blank">
+                  <img src="https://miro.medium.com/max/1400/1*SSRjtoQ0H2X3SBPOiJ5rZw.jpeg" style="width:30%">
+                  <div class="caption">
+                    <p>Github Profile (its basically empty I just made it)</p>
+                  </div>
+                </a>
+              </div>
+              <div class="thumbnail">
+                <a href="https://www.linkedin.com/in/aiden-bauer-685434247/" target="_blank">
+                  <img src="data:image/jpeg;base64,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" style="width:30%">
+                  <div class="caption">
+                    <p>LinkedIn (also not completely setup)</p>
+                  </div>
+                </a>
+              </div>
+            <p><a href="https://www.youtube.com/watch?v=dG-MfsJWvS0">Very cool dog video</a></p>
+            <p><a href="https://www.youtube.com/watch?v=qcFQB8XPrko">Funny orangutan</a></p>
+        </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="about"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+        >
+          <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Aiden Bauer, I am a junior in computer science on the Data Science track.
+                I love dogs, playing video games, listening to music, and watching sports.
+            </p>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                    <img
+                      src="file:///C:/Users/bruis/OneDrive%20-%20UMBC/UMBC/Pictures/Camera%20Roll/dogs/lilysmile.jpg"
+                      style="width: 100%"
+                    />
+                    <div class="caption">
+                      <p>
+                        This is my dog lily :) she is turning 7 this year and is a beagle. 
+                        She is currently in Florida with my mom and grandma and she is the sweetest dog.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                    <img
+                      src="https://cdn.vox-cdn.com/thumbor/cJ4rU9OWNrIljejg_vRgtnEy1H8=/0x0:8192x3357/1200x800/filters:focal(3382x800:4692x2110)/cdn.vox-cdn.com/uploads/chorus_image/image/70807569/1238387334.0.jpg"
+                      alt="Nature"
+                      style="width: 100%"
+                    />
+                    <div class="caption">
+                      <p>
+                        I am a huge Ravens fan
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/e/eb/ParamoreParamore.png"
+                      alt="Fjords"
+                      style="width: 100%"
+                    />
+                    <div class="caption">
+                      <p>
+                        My favorite music artist is Paramore and my favorite album from them is their self-titled album. (they have an album dropping soon !)
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="messages"
+          role="tabpanel"
+          aria-labelledby="messages-tab"
+        >
+          <img
+            src="data:image/jpeg;base64,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"
+            width="900"
+            height="600"
+            class="img-fluid"
+            alt=""
+          />
+          my fault
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
